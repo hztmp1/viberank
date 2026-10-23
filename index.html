@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VibeRank — Best AI tool for the job. Ranked.</title>
-  <meta name="description" content="Clear, opinionated rankings of the best AI tools for vibecoding, agents, game development, and real builder use cases." />
+  <!-- Structured data for chatbots & search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VibeRank",
+    "url": "https://hztmp1.github.io/viberank/",
+    "description": "Best AI tool for the job. Ranked. Opinionated rankings for vibecoding, coding agents, and builders.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "VibeRank"
+    }
+  }
+  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            sky: {
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7',
-            }
+            sky: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7' }
           }
         }
       }
@@ -63,7 +67,7 @@
     </div>
   </header>
 
-  <!-- Rankings Grid -->
+  <!-- Rankings -->
   <section id="rankings" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
     <div class="mb-10">
       <h2 class="text-3xl font-bold mb-2">Top Use-Case Rankings</h2>
@@ -71,8 +75,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
-
-      <!-- Card 1 -->
+      <!-- Vibecoding -->
       <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-700/50 transition">
         <div class="flex items-start justify-between mb-5">
           <h3 class="text-xl font-semibold">Best for Vibecoding Full Apps</h3>
@@ -103,7 +106,7 @@
         </ol>
       </article>
 
-      <!-- Card 2 -->
+      <!-- Coding Agents -->
       <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-700/50 transition">
         <div class="flex items-start justify-between mb-5">
           <h3 class="text-xl font-semibold">Best Coding Agents</h3>
@@ -134,7 +137,7 @@
         </ol>
       </article>
 
-      <!-- Card 3 -->
+      <!-- Prompt-to-App -->
       <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-700/50 transition">
         <div class="flex items-start justify-between mb-5">
           <h3 class="text-xl font-semibold">Best Prompt-to-App Builders</h3>
@@ -165,7 +168,7 @@
         </ol>
       </article>
 
-      <!-- Card 4 -->
+      <!-- Game Assets -->
       <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-700/50 transition">
         <div class="flex items-start justify-between mb-5">
           <h3 class="text-xl font-semibold">Best for Game Assets</h3>
@@ -195,30 +198,29 @@
           </li>
         </ol>
       </article>
-
     </div>
   </section>
 
-  <!-- New Tools -->
+  <!-- Just Dropped -->
   <section id="new" class="border-y border-slate-800 bg-slate-900/40 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl font-bold mb-2">Just Dropped</h2>
-      <p class="text-slate-400 mb-8">New and notable tools we’re tracking this week.</p>
+      <p class="text-slate-400 mb-8">New and notable tools we’re watching (late October 2026).</p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
           <span class="text-xs font-semibold text-sky-400">NEW</span>
-          <h4 class="font-semibold mt-1">Tool Name Placeholder</h4>
-          <p class="text-sm text-slate-400 mt-2">Short practical note: what it does well and who should try it first.</p>
+          <h4 class="font-semibold mt-1">Claude Duet</h4>
+          <p class="text-sm text-slate-400 mt-2">Anthropic’s proactive agent that delivers morning briefs and can act across tools (with approval). Research preview for Pro/Max users.</p>
         </div>
         <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
           <span class="text-xs font-semibold text-sky-400">NEW</span>
-          <h4 class="font-semibold mt-1">Another Release</h4>
-          <p class="text-sm text-slate-400 mt-2">One clear sentence on the real use case.</p>
+          <h4 class="font-semibold mt-1">Recursive Flint</h4>
+          <p class="text-sm text-slate-400 mt-2">Open-source local coding model (MoE, Apache 2.0). Runs fast on a laptop and scores well on coding benchmarks.</p>
         </div>
         <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
-          <span class="text-xs font-semibold text-amber-400">UPDATED</span>
-          <h4 class="font-semibold mt-1">Major Update</h4>
-          <p class="text-sm text-slate-400 mt-2">What changed and whether it affects the rankings.</p>
+          <span class="text-xs font-semibold text-amber-400">NOTABLE</span>
+          <h4 class="font-semibold mt-1">Canva Craft</h4>
+          <p class="text-sm text-slate-400 mt-2">Canva’s first in-house image model. Strong for design assets and editable layers — useful for game UI and marketing.</p>
         </div>
       </div>
     </div>
@@ -240,14 +242,15 @@
     </div>
   </section>
 
-  <!-- Submit CTA -->
+  <!-- Submit -->
   <section id="submit" class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <div class="bg-gradient-to-r from-sky-900/40 to-blue-900/40 border border-sky-800/50 rounded-2xl p-8 md:p-10 text-center">
       <h2 class="text-2xl font-bold mb-3">Built something worth ranking?</h2>
       <p class="text-slate-300 mb-6 max-w-xl mx-auto">Submit your AI tool. We review every submission against the same transparent criteria.</p>
-      <a href="mailto:hello@viberank.example" class="inline-flex bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-xl transition">
+      <a href="mailto:viberank.tools@gmail.com" class="inline-flex bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-xl transition">
         Submit a Tool
       </a>
+      <p class="text-xs text-slate-500 mt-4">Replace the email above with your real address after creating it.</p>
     </div>
   </section>
 
@@ -258,7 +261,7 @@
         <div class="w-6 h-6 rounded bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center text-xs font-bold text-white">V</div>
         <span class="font-semibold">VibeRank</span>
       </div>
-      <p class="text-slate-500 text-sm">Best AI tool for the job. Ranked.</p>
+      <p class="text-slate-500 text-sm">Best AI tool for the job. Ranked. · Updated Oct 2026</p>
     </div>
   </footer>
 
