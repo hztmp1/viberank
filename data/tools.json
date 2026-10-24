@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-10-24",
+  "tools": [
+    {
+      "id": "claude-code-agents",
+      "name": "Claude Code",
+      "category": "coding-agents",
+      "description": "Highest real-world adoption and merge quality",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "agent",
+        "terminal",
+        "github-integration"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 153182,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 1,
+      "score": 26
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "vibecoding",
+      "description": "Best terminal-based agent for large repos",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "terminal",
+        "agent",
+        "large-repos"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 153182,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 2,
+      "score": 21
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new",
+      "category": "prompt-to-app",
+      "description": "Fastest path from prompt to full-stack prototype",
+      "url": "https://bolt.new",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "full-stack",
+        "prototype"
+      ],
+      "githubRepo": "stackblitz/bolt.new",
+      "twitterQuery": "Bolt.new",
+      "productHuntSlug": "bolt",
+      "signals": {
+        "githubStars": 16573,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 3,
+      "score": 13
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "vibecoding",
+      "description": "AI-native editor with the strongest agent mode for real projects",
+      "url": "https://cursor.sh",
+      "pricing": "freemium",
+      "tags": [
+        "editor",
+        "agent",
+        "typescript",
+        "python"
+      ],
+      "githubRepo": "getcursor/cursor",
+      "twitterQuery": "Cursor AI editor",
+      "productHuntSlug": "cursor",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 4,
+      "score": 0
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "category": "vibecoding",
+      "description": "Prompt → polished, hosted web app in minutes",
+      "url": "https://lovable.dev",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "hosting",
+        "react"
+      ],
+      "twitterQuery": "Lovable AI",
+      "productHuntSlug": "lovable",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 5,
+      "score": 0
+    },
+    {
+      "id": "cursor-agent",
+      "name": "Cursor Agent",
+      "category": "coding-agents",
+      "description": "Best multi-file agents inside the editor",
+      "url": "https://cursor.sh",
+      "pricing": "freemium",
+      "tags": [
+        "agent",
+        "editor",
+        "multi-file"
+      ],
+      "githubRepo": "getcursor/cursor",
+      "twitterQuery": "Cursor Agent",
+      "productHuntSlug": "cursor",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 6,
+      "score": 0
+    },
+    {
+      "id": "openai-codex",
+      "name": "OpenAI Codex",
+      "category": "coding-agents",
+      "description": "Excellent for delegated cloud tasks",
+      "url": "https://openai.com/codex",
+      "pricing": "subscription",
+      "tags": [
+        "agent",
+        "cloud",
+        "delegated-tasks"
+      ],
+      "twitterQuery": "OpenAI Codex",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 7,
+      "score": 0
+    },
+    {
+      "id": "lovable-prompt",
+      "name": "Lovable",
+      "category": "prompt-to-app",
+      "description": "Highest polish + built-in hosting",
+      "url": "https://lovable.dev",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "hosting",
+        "polish"
+      ],
+      "twitterQuery": "Lovable AI",
+      "productHuntSlug": "lovable",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 8,
+      "score": 0
+    },
+    {
+      "id": "replit-agent",
+      "name": "Replit Agent",
+      "category": "prompt-to-app",
+      "description": "Full environment + collaboration in one place",
+      "url": "https://replit.com/agent",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "collaboration",
+        "environment"
+      ],
+      "githubRepo": "replit/replit-agent",
+      "twitterQuery": "Replit Agent",
+      "productHuntSlug": "replit-agent",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 9,
+      "score": 0
+    },
+    {
+      "id": "meshy",
+      "name": "Meshy",
+      "category": "game-assets",
+      "description": "Strongest overall 3D asset pipeline",
+      "url": "https://meshy.ai",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "game-assets",
+        "pipeline"
+      ],
+      "twitterQuery": "Meshy AI 3D",
+      "productHuntSlug": "meshy",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 10,
+      "score": 0
+    },
+    {
+      "id": "tripo-ai",
+      "name": "Tripo AI",
+      "category": "game-assets",
+      "description": "Excellent text/image-to-3D alternative",
+      "url": "https://tripo.ai",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "text-to-3d",
+        "image-to-3d"
+      ],
+      "twitterQuery": "Tripo AI 3D",
+      "productHuntSlug": "tripo-ai",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 11,
+      "score": 0
+    },
+    {
+      "id": "scenario",
+      "name": "Scenario",
+      "category": "game-assets",
+      "description": "Best for consistent custom art styles",
+      "url": "https://scenario.com",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "art-style",
+        "consistency"
+      ],
+      "twitterQuery": "Scenario AI",
+      "productHuntSlug": "scenario",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 12,
+      "score": 0
+    }
+  ],
+  "newTools": [
+    {
+      "id": "claude-duet",
+      "name": "Claude Duet",
+      "description": "Anthropic's proactive agent that delivers morning briefs and can act across tools (with approval). Research preview for Pro/Max users.",
+      "url": "https://claude.ai/duet",
+      "category": "agent",
+      "status": "NEW",
+      "tags": [
+        "proactive",
+        "cross-tool",
+        "research-preview"
+      ],
+      "dateAdded": "2026-10-20"
+    },
+    {
+      "id": "recursive-flint",
+      "name": "Recursive Flint",
+      "description": "Open-source local coding model (MoE, Apache 2.0). Runs fast on a laptop and scores well on coding benchmarks.",
+      "url": "https://github.com/recursive/flint",
+      "category": "coding-model",
+      "status": "NEW",
+      "tags": [
+        "open-source",
+        "local",
+        "moe",
+        "apache-2"
+      ],
+      "dateAdded": "2026-10-18"
+    },
+    {
+      "id": "canva-craft",
+      "name": "Canva Craft",
+      "description": "Canva's first in-house image model. Strong for design assets and editable layers — useful for game UI and marketing.",
+      "url": "https://canva.com/craft",
+      "category": "image-model",
+      "status": "NOTABLE",
+      "tags": [
+        "image-model",
+        "design",
+        "editable-layers"
+      ],
+      "dateAdded": "2026-10-15"
+    }
+  ]
+}
