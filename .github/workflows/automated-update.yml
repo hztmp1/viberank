@@ -31,7 +31,7 @@ jobs:
       - name: Fetch signals & update rankings
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          PRODUCTHUNT_ACCESS_TOKEN: ${{ secrets.PRODUCTHUNT_ACCESS_TOKEN }}
         run: npm run fetch-signals
 
       - name: Generate site

@@ -64,7 +64,7 @@ async function fetchTwitterMentions(query) {
 }
 
 async function fetchProductHuntVotes(slug) {
-  const apiKey = process.env.PRODUCTHUNT_TOKEN;
+  const apiKey = process.env.PRODUCTHUNT_ACCESS_TOKEN;
   if (!apiKey) return 0;
 
   return new Promise((resolve) => {
