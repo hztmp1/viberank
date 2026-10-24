@@ -3,70 +3,114 @@
   "lastUpdated": "2026-10-24",
   "tools": [
     {
-      "id": "claude-code-agents",
-      "name": "Claude Code",
-      "category": "coding-agents",
-      "description": "Highest real-world adoption and merge quality",
-      "url": "https://claude.ai/code",
-      "pricing": "subscription",
-      "tags": [
-        "agent",
-        "terminal",
-        "github-integration"
-      ],
-      "githubRepo": "anthropics/claude-code",
-      "twitterQuery": "Claude Code",
-      "signals": {
-        "githubStars": 153182,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 1,
-      "score": 26
-    },
-    {
-      "id": "claude-code",
-      "name": "Claude Code",
-      "category": "vibecoding",
-      "description": "Best terminal-based agent for large repos",
-      "url": "https://claude.ai/code",
-      "pricing": "subscription",
-      "tags": [
-        "terminal",
-        "agent",
-        "large-repos"
-      ],
-      "githubRepo": "anthropics/claude-code",
-      "twitterQuery": "Claude Code",
-      "signals": {
-        "githubStars": 153182,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 2,
-      "score": 21
-    },
-    {
-      "id": "bolt-new",
-      "name": "Bolt.new",
+      "id": "lovable-prompt",
+      "name": "Lovable",
       "category": "prompt-to-app",
-      "description": "Fastest path from prompt to full-stack prototype",
-      "url": "https://bolt.new",
+      "description": "Highest polish + built-in hosting",
+      "url": "https://lovable.dev",
       "pricing": "freemium",
       "tags": [
         "prompt-to-app",
-        "full-stack",
-        "prototype"
+        "hosting",
+        "polish"
       ],
-      "githubRepo": "stackblitz/bolt.new",
-      "twitterQuery": "Bolt.new",
-      "productHuntSlug": "bolt",
+      "twitterQuery": "Lovable AI",
+      "productHuntSlug": "lovable",
       "signals": {
-        "githubStars": 16573,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 1455
+      },
+      "rank": 1,
+      "score": 16
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "category": "vibecoding",
+      "description": "Prompt → polished, hosted web app in minutes",
+      "url": "https://lovable.dev",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "hosting",
+        "react"
+      ],
+      "twitterQuery": "Lovable AI",
+      "productHuntSlug": "lovable",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 1455
+      },
+      "rank": 2,
+      "score": 15
+    },
+    {
+      "id": "meshy",
+      "name": "Meshy",
+      "category": "game-assets",
+      "description": "Strongest overall 3D asset pipeline",
+      "url": "https://meshy.ai",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "game-assets",
+        "pipeline"
+      ],
+      "twitterQuery": "Meshy AI 3D",
+      "productHuntSlug": "meshy",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 595
       },
       "rank": 3,
+      "score": 15
+    },
+    {
+      "id": "replit-agent",
+      "name": "Replit Agent",
+      "category": "prompt-to-app",
+      "description": "Full environment + collaboration in one place",
+      "url": "https://replit.com/agent",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "collaboration",
+        "environment"
+      ],
+      "githubRepo": "replit/replit-agent",
+      "twitterQuery": "Replit Agent",
+      "productHuntSlug": "replit-agent",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 581
+      },
+      "rank": 4,
+      "score": 14
+    },
+    {
+      "id": "tripo-ai",
+      "name": "Tripo AI",
+      "category": "game-assets",
+      "description": "Excellent text/image-to-3D alternative",
+      "url": "https://tripo.ai",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "text-to-3d",
+        "image-to-3d"
+      ],
+      "twitterQuery": "Tripo AI 3D",
+      "productHuntSlug": "tripo-ai",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 102
+      },
+      "rank": 5,
       "score": 13
     },
     {
@@ -87,33 +131,33 @@
       "productHuntSlug": "cursor",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
+        "twitterMentions": 20,
+        "producthuntVotes": 23
       },
-      "rank": 4,
-      "score": 0
+      "rank": 6,
+      "score": 8
     },
     {
-      "id": "lovable",
-      "name": "Lovable",
-      "category": "vibecoding",
-      "description": "Prompt → polished, hosted web app in minutes",
-      "url": "https://lovable.dev",
+      "id": "scenario",
+      "name": "Scenario",
+      "category": "game-assets",
+      "description": "Best for consistent custom art styles",
+      "url": "https://scenario.com",
       "pricing": "freemium",
       "tags": [
-        "prompt-to-app",
-        "hosting",
-        "react"
+        "3d",
+        "art-style",
+        "consistency"
       ],
-      "twitterQuery": "Lovable AI",
-      "productHuntSlug": "lovable",
+      "twitterQuery": "Scenario AI",
+      "productHuntSlug": "scenario",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
+        "twitterMentions": 20,
+        "producthuntVotes": 5
       },
-      "rank": 5,
-      "score": 0
+      "rank": 7,
+      "score": 8
     },
     {
       "id": "cursor-agent",
@@ -132,11 +176,78 @@
       "productHuntSlug": "cursor",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 23
+      },
+      "rank": 8,
+      "score": 7
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new",
+      "category": "prompt-to-app",
+      "description": "Fastest path from prompt to full-stack prototype",
+      "url": "https://bolt.new",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "full-stack",
+        "prototype"
+      ],
+      "githubRepo": "stackblitz/bolt.new",
+      "twitterQuery": "Bolt.new",
+      "productHuntSlug": "bolt",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 16,
+        "producthuntVotes": 2
+      },
+      "rank": 9,
+      "score": 6
+    },
+    {
+      "id": "claude-code-agents",
+      "name": "Claude Code",
+      "category": "coding-agents",
+      "description": "Highest real-world adoption and merge quality",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "agent",
+        "terminal",
+        "github-integration"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
         "producthuntVotes": 0
       },
-      "rank": 6,
-      "score": 0
+      "rank": 10,
+      "score": 3
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "vibecoding",
+      "description": "Best terminal-based agent for large repos",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "terminal",
+        "agent",
+        "large-repos"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 20,
+        "producthuntVotes": 0
+      },
+      "rank": 11,
+      "score": 3
     },
     {
       "id": "openai-codex",
@@ -153,122 +264,11 @@
       "twitterQuery": "OpenAI Codex",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 7,
-      "score": 0
-    },
-    {
-      "id": "lovable-prompt",
-      "name": "Lovable",
-      "category": "prompt-to-app",
-      "description": "Highest polish + built-in hosting",
-      "url": "https://lovable.dev",
-      "pricing": "freemium",
-      "tags": [
-        "prompt-to-app",
-        "hosting",
-        "polish"
-      ],
-      "twitterQuery": "Lovable AI",
-      "productHuntSlug": "lovable",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 8,
-      "score": 0
-    },
-    {
-      "id": "replit-agent",
-      "name": "Replit Agent",
-      "category": "prompt-to-app",
-      "description": "Full environment + collaboration in one place",
-      "url": "https://replit.com/agent",
-      "pricing": "freemium",
-      "tags": [
-        "prompt-to-app",
-        "collaboration",
-        "environment"
-      ],
-      "githubRepo": "replit/replit-agent",
-      "twitterQuery": "Replit Agent",
-      "productHuntSlug": "replit-agent",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 9,
-      "score": 0
-    },
-    {
-      "id": "meshy",
-      "name": "Meshy",
-      "category": "game-assets",
-      "description": "Strongest overall 3D asset pipeline",
-      "url": "https://meshy.ai",
-      "pricing": "freemium",
-      "tags": [
-        "3d",
-        "game-assets",
-        "pipeline"
-      ],
-      "twitterQuery": "Meshy AI 3D",
-      "productHuntSlug": "meshy",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 10,
-      "score": 0
-    },
-    {
-      "id": "tripo-ai",
-      "name": "Tripo AI",
-      "category": "game-assets",
-      "description": "Excellent text/image-to-3D alternative",
-      "url": "https://tripo.ai",
-      "pricing": "freemium",
-      "tags": [
-        "3d",
-        "text-to-3d",
-        "image-to-3d"
-      ],
-      "twitterQuery": "Tripo AI 3D",
-      "productHuntSlug": "tripo-ai",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 11,
-      "score": 0
-    },
-    {
-      "id": "scenario",
-      "name": "Scenario",
-      "category": "game-assets",
-      "description": "Best for consistent custom art styles",
-      "url": "https://scenario.com",
-      "pricing": "freemium",
-      "tags": [
-        "3d",
-        "art-style",
-        "consistency"
-      ],
-      "twitterQuery": "Scenario AI",
-      "productHuntSlug": "scenario",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
+        "twitterMentions": 20,
         "producthuntVotes": 0
       },
       "rank": 12,
-      "score": 0
+      "score": 3
     }
   ],
   "newTools": [
