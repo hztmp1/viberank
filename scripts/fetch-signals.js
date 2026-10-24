@@ -36,13 +36,13 @@ async function fetchGitHubStars(owner, repo) {
 }
 
 async function fetchTwitterMentions(query) {
-  const apiKey = process.env.RAPIDAPI_KEY;
+  const apiKey = process.env.RAPIDAPI_KEY?.trim();
   if (!apiKey) return 0;
 
   return new Promise((resolve) => {
     const options = {
       hostname: 'twitter-api45.p.rapidapi.com',
-      path: `/search/search.php?query=${encodeURIComponent(query)}&type=Top`,
+      path: `/search.php?query=${encodeURIComponent(query)}`,
       headers: {
         'X-RapidAPI-Key': apiKey,
         'X-RapidAPI-Host': 'twitter-api45.p.rapidapi.com'
@@ -64,7 +64,7 @@ async function fetchTwitterMentions(query) {
 }
 
 async function fetchProductHuntVotes(slug) {
-  const apiKey = process.env.PRODUCTHUNT_ACCESS_TOKEN;
+  const apiKey = process.env.PRODUCTHUNT_ACCESS_TOKEN?.trim();
   if (!apiKey) return 0;
 
   return new Promise((resolve) => {
@@ -145,6 +145,7 @@ async function updateSignals() {
     }
 
     tool.score = calculateScore(tool.signals, tool.category);
+    console.log(`    Signals: GitHub ${tool.signals.githubStars} | Twitter ${tool.signals.twitterMentions} | PH ${tool.signals.producthuntVotes} → Score: ${tool.score}`);
     await new Promise(r => setTimeout(r, 1000));
   }
 
