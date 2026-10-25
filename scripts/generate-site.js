@@ -130,7 +130,8 @@ function generateSitemap(data) {
     { url: `${BASE_URL}#rankings`, lastmod: lastUpdated, changefreq: 'daily', priority: '0.9' },
     { url: `${BASE_URL}#new`, lastmod: lastUpdated, changefreq: 'daily', priority: '0.8' },
     { url: `${BASE_URL}#methodology`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' },
-    { url: `${BASE_URL}#submit`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' }
+    { url: `${BASE_URL}#submit`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' },
+    { url: `${BASE_URL}sponsor.html`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' }
   ];
 
   const urlElements = urls.map(u => `
@@ -207,6 +208,7 @@ function generateHtml(data) {
         <a href="#rankings" class="hover:text-white transition">Rankings</a>
         <a href="#new" class="hover:text-white transition">New Tools</a>
         <a href="#methodology" class="hover:text-white transition">Methodology</a>
+        <a href="sponsor.html" class="hover:text-white transition">Sponsor</a>
         <a href="#submit" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-lg transition">Submit a Tool</a>
       </div>
     </div>
@@ -266,7 +268,7 @@ ${newToolsHtml}
         <li>Pricing clarity and usefulness of the free tier</li>
         <li>Current real-world signal (not just launch hype)</li>
       </ul>
-      <p class="text-slate-400 pt-2">Rankings are never sold. Any future sponsored placements will be clearly labeled.</p>
+      <p class="text-slate-400 pt-2">Rankings are never sold. <a href="sponsor.html" class="text-sky-400 hover:text-sky-300 underline">Sponsored placements</a> are clearly labeled.</p>
     </div>
   </section>
 
