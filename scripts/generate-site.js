@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 const DATA_FILE = path.join(__dirname, '../data/tools.json');
 const OUTPUT_FILE = path.join(__dirname, '../index.html');
-const BASE_URL = 'https://hztmp1.github.io/viberank/';
+const BASE_URL = 'https://viberanktools.dpdns.org/';
 
 const CATEGORIES = [
   { id: 'vibecoding', title: 'Best for Vibecoding Full Apps', desc: 'AI-native editors and agent modes for real projects' },
