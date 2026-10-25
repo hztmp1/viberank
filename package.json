@@ -6,10 +6,11 @@
   "scripts": {
     "fetch-signals": "node scripts/fetch-signals.js",
     "generate": "node scripts/generate-site.js",
+    "generate:tools": "node scripts/generate-tool-pages.js",
     "newsletter": "node scripts/generate-newsletter.js",
     "newsletter:send": "node scripts/send-newsletter.js",
-    "build": "npm run fetch-signals && npm run generate",
-    "dev": "npm run generate && npx serve .",
+    "build": "npm run fetch-signals && npm run generate && npm run generate:tools",
+    "dev": "npm run generate && npm run generate:tools && npx serve .",
     "monitor-x": "node scripts/x-monitor.js"
   },
   "dependencies": {},
