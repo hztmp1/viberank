@@ -17,7 +17,7 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 153298,
+        "githubStars": 153330,
         "twitterMentions": 0,
         "producthuntVotes": 0
       },
@@ -39,7 +39,7 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 153298,
+        "githubStars": 153330,
         "twitterMentions": 0,
         "producthuntVotes": 0
       },
@@ -62,12 +62,12 @@
       "twitterQuery": "Bolt.new",
       "productHuntSlug": "bolt",
       "signals": {
-        "githubStars": 16575,
+        "githubStars": 16574,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 2
       },
       "rank": 3,
-      "score": 13
+      "score": 14
     },
     {
       "id": "lovable-prompt",
@@ -86,10 +86,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 1455
       },
       "rank": 4,
-      "score": 0
+      "score": 11
     },
     {
       "id": "lovable",
@@ -108,10 +108,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 1455
       },
       "rank": 5,
-      "score": 0
+      "score": 11
     },
     {
       "id": "meshy",
@@ -130,10 +130,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 595
       },
       "rank": 6,
-      "score": 0
+      "score": 10
     },
     {
       "id": "replit-agent",
@@ -153,10 +153,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 581
       },
       "rank": 7,
-      "score": 0
+      "score": 10
     },
     {
       "id": "tripo-ai",
@@ -175,10 +175,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 102
       },
       "rank": 8,
-      "score": 0
+      "score": 7
     },
     {
       "id": "cursor",
@@ -199,32 +199,10 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 23
       },
       "rank": 9,
-      "score": 0
-    },
-    {
-      "id": "scenario",
-      "name": "Scenario",
-      "category": "game-assets",
-      "description": "Best for consistent custom art styles",
-      "url": "https://scenario.com",
-      "pricing": "freemium",
-      "tags": [
-        "3d",
-        "art-style",
-        "consistency"
-      ],
-      "twitterQuery": "Scenario AI",
-      "productHuntSlug": "scenario",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 10,
-      "score": 0
+      "score": 5
     },
     {
       "id": "cursor-agent",
@@ -244,10 +222,32 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 0
+        "producthuntVotes": 23
+      },
+      "rank": 10,
+      "score": 4
+    },
+    {
+      "id": "scenario",
+      "name": "Scenario",
+      "category": "game-assets",
+      "description": "Best for consistent custom art styles",
+      "url": "https://scenario.com",
+      "pricing": "freemium",
+      "tags": [
+        "3d",
+        "art-style",
+        "consistency"
+      ],
+      "twitterQuery": "Scenario AI",
+      "productHuntSlug": "scenario",
+      "signals": {
+        "githubStars": 0,
+        "twitterMentions": 0,
+        "producthuntVotes": 5
       },
       "rank": 11,
-      "score": 0
+      "score": 3
     },
     {
       "id": "openai-codex",
