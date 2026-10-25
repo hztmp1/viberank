@@ -32,9 +32,7 @@ async function sendNewsletter() {
 
   const postData = JSON.stringify({
     subject,
-    preview_text,
-    body,
-    publish: true // Set to false to save as draft only
+    body
   });
 
   const options = {
