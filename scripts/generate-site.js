@@ -66,8 +66,6 @@ function generateNewTools(newTools) {
   }).join('\n');
 }
 
-const BASE_URL = 'https://hztmp1.github.io/viberank/';
-
 function generateStructuredData(data) {
   const lastUpdated = data.lastUpdated || new Date().toISOString().split('T')[0];
 
