@@ -36,36 +36,44 @@ async function fetchGitHubStars(owner, repo) {
 }
 
 async function fetchTwitterMentions(query) {
-  const apiKey = process.env.RAPIDAPI_KEY?.trim();
-  if (!apiKey) return 0;
+  const bearerToken = process.env.TWITTER_BEARER_TOKEN?.trim();
+  if (!bearerToken) {
+    console.log('    ⚠️  TWITTER_BEARER_TOKEN not set, skipping Twitter fetch');
+    return 0;
+  }
 
   return new Promise((resolve) => {
-    const options = {
-      hostname: 'twitter-api45.p.rapidapi.com',
-      path: `/search.php?query=${encodeURIComponent(query)}`,
+    const encodedQuery = encodeURIComponent(query);
+    const url = `https://api.twitter.com/2/tweets/search/recent?query=${encodedQuery}&max_results=10&tweet.fields=created_at,author_id,public_metrics`;
+
+    const req = https.get(url, {
       headers: {
-        'X-RapidAPI-Key': apiKey,
-        'X-RapidAPI-Host': 'twitter-api45.p.rapidapi.com'
+        'Authorization': `Bearer ${bearerToken}`,
+        'User-Agent': 'VibeRank-Bot'
       }
-    };
-    https.get(options, (res) => {
+    }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
         try {
           const json = JSON.parse(data);
-          resolve(json.timeline?.length || 0);
+          resolve(json.data?.length || 0);
         } catch {
           resolve(0);
         }
       });
-    }).on('error', () => resolve(0));
+    });
+    req.on('error', () => resolve(0));
+    req.setTimeout(5000, () => { req.destroy(); resolve(0); });
   });
 }
 
 async function fetchProductHuntVotes(slug) {
   const apiKey = process.env.PRODUCTHUNT_ACCESS_TOKEN?.trim();
-  if (!apiKey) return 0;
+  if (!apiKey) {
+    console.log('    ⚠️  PRODUCTHUNT_ACCESS_TOKEN not set, skipping');
+    return 0;
+  }
 
   return new Promise((resolve) => {
     const query = `

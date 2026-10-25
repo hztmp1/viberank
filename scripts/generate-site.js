@@ -13,6 +13,7 @@ const __dirname = path.dirname(__filename);
 
 const DATA_FILE = path.join(__dirname, '../data/tools.json');
 const OUTPUT_FILE = path.join(__dirname, '../index.html');
+const BASE_URL = 'https://hztmp1.github.io/viberank/';
 
 const CATEGORIES = [
   { id: 'vibecoding', title: 'Best for Vibecoding Full Apps', desc: 'AI-native editors and agent modes for real projects' },
@@ -65,10 +66,103 @@ function generateNewTools(newTools) {
   }).join('\n');
 }
 
+const BASE_URL = 'https://hztmp1.github.io/viberank/';
+
+function generateStructuredData(data) {
+  const lastUpdated = data.lastUpdated || new Date().toISOString().split('T')[0];
+
+  const webSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VibeRank",
+    "url": BASE_URL,
+    "description": "Best AI tool for the job. Ranked. Opinionated rankings for vibecoding, coding agents, and builders.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "VibeRank"
+    }
+  };
+
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "VibeRank Tool Rankings",
+    "description": "Opinionated rankings of AI tools for builders",
+    "itemListElement": data.tools
+      .filter(t => t.rank <= 12)
+      .map((tool, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": tool.name,
+          "url": tool.url,
+          "description": tool.description,
+          "applicationCategory": tool.category,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      }))
+  };
+
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL },
+      { "@type": "ListItem", "position": 2, "name": "Rankings", "item": `${BASE_URL}#rankings` }
+    ]
+  };
+
+  return `
+  <!-- Structured data for chatbots & search -->
+  <script type="application/ld+json">${JSON.stringify(webSite)}</script>
+  <script type="application/ld+json">${JSON.stringify(itemList)}</script>
+  <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>`;
+}
+
+function generateSitemap(data) {
+  const lastUpdated = data.lastUpdated || new Date().toISOString().split('T')[0];
+  const urls = [
+    { url: BASE_URL, lastmod: lastUpdated, changefreq: 'daily', priority: '1.0' },
+    { url: `${BASE_URL}#rankings`, lastmod: lastUpdated, changefreq: 'daily', priority: '0.9' },
+    { url: `${BASE_URL}#new`, lastmod: lastUpdated, changefreq: 'daily', priority: '0.8' },
+    { url: `${BASE_URL}#methodology`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' },
+    { url: `${BASE_URL}#submit`, lastmod: lastUpdated, changefreq: 'monthly', priority: '0.5' }
+  ];
+
+  const urlElements = urls.map(u => `
+    <url>
+      <loc>${u.url}</loc>
+      <lastmod>${u.lastmod}</lastmod>
+      <changefreq>${u.changefreq}</changefreq>
+      <priority>${u.priority}</priority>
+    </url>`).join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urlElements}
+</urlset>`;
+}
+
+function generateRobotsTxt() {
+  return `# VibeRank robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: ${BASE_URL}sitemap.xml
+`;
+}
+
 function generateHtml(data) {
   const rankingsHtml = CATEGORIES.map(cat => generateCategorySection(cat, data.tools)).join('\n');
   const newToolsHtml = generateNewTools(data.newTools);
   const lastUpdated = data.lastUpdated || new Date().toISOString().split('T')[0];
+  const structuredData = generateStructuredData(data);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -79,24 +173,11 @@ function generateHtml(data) {
   <meta property="og:title" content="VibeRank - Best AI Tool for the Job. Ranked.">
   <meta property="og:description" content="Opinionated rankings of the AI tools that actually help builders ship — focused on vibecoding, agents, and games.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hztmp1.github.io/viberank/">
+  <meta property="og:url" content="${BASE_URL}">
   <meta name="twitter:card" content="summary_large_image">
   <title>VibeRank — Best AI Tool for the Job. Ranked.</title>
 
-  <!-- Structured data for chatbots & search -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "VibeRank",
-    "url": "https://hztmp1.github.io/viberank/",
-    "description": "Best AI tool for the job. Ranked. Opinionated rankings for vibecoding, coding agents, and builders.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "VibeRank"
-    }
-  }
-  </script>
+  ${structuredData}
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -222,6 +303,14 @@ function main() {
   const html = generateHtml(data);
   fs.writeFileSync(OUTPUT_FILE, html);
   console.log('✅ Site generated at', OUTPUT_FILE);
+
+  const sitemap = generateSitemap(data);
+  fs.writeFileSync(path.join(__dirname, '../sitemap.xml'), sitemap);
+  console.log('✅ Sitemap generated at sitemap.xml');
+
+  const robots = generateRobotsTxt();
+  fs.writeFileSync(path.join(__dirname, '../robots.txt'), robots);
+  console.log('✅ robots.txt generated at robots.txt');
 }
 
 main();
