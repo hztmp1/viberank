@@ -1,0 +1,5 @@
+# VibeRank robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://hztmp1.github.io/viberank/sitemap.xml

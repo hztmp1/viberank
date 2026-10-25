@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-10-24",
+  "lastUpdated": "2026-10-25",
   "tools": [
     {
       "id": "claude-code-agents",
@@ -17,12 +17,12 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 153287,
-        "twitterMentions": 20,
+        "githubStars": 153298,
+        "twitterMentions": 0,
         "producthuntVotes": 0
       },
       "rank": 1,
-      "score": 29
+      "score": 26
     },
     {
       "id": "claude-code",
@@ -39,12 +39,12 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 153287,
-        "twitterMentions": 20,
+        "githubStars": 153298,
+        "twitterMentions": 0,
         "producthuntVotes": 0
       },
       "rank": 2,
-      "score": 24
+      "score": 21
     },
     {
       "id": "bolt-new",
@@ -62,12 +62,12 @@
       "twitterQuery": "Bolt.new",
       "productHuntSlug": "bolt",
       "signals": {
-        "githubStars": 16573,
-        "twitterMentions": 18,
-        "producthuntVotes": 2
+        "githubStars": 16575,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 3,
-      "score": 18
+      "score": 13
     },
     {
       "id": "lovable-prompt",
@@ -85,11 +85,11 @@
       "productHuntSlug": "lovable",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 1455
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 4,
-      "score": 16
+      "score": 0
     },
     {
       "id": "lovable",
@@ -107,11 +107,11 @@
       "productHuntSlug": "lovable",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 1455
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 5,
-      "score": 15
+      "score": 0
     },
     {
       "id": "meshy",
@@ -129,11 +129,11 @@
       "productHuntSlug": "meshy",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 595
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 6,
-      "score": 15
+      "score": 0
     },
     {
       "id": "replit-agent",
@@ -152,11 +152,11 @@
       "productHuntSlug": "replit-agent",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 19,
-        "producthuntVotes": 581
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 7,
-      "score": 14
+      "score": 0
     },
     {
       "id": "tripo-ai",
@@ -174,11 +174,11 @@
       "productHuntSlug": "tripo-ai",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 102
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 8,
-      "score": 13
+      "score": 0
     },
     {
       "id": "cursor",
@@ -198,11 +198,11 @@
       "productHuntSlug": "cursor",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 19,
-        "producthuntVotes": 23
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 9,
-      "score": 8
+      "score": 0
     },
     {
       "id": "scenario",
@@ -220,11 +220,11 @@
       "productHuntSlug": "scenario",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 5
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 10,
-      "score": 8
+      "score": 0
     },
     {
       "id": "cursor-agent",
@@ -243,11 +243,11 @@
       "productHuntSlug": "cursor",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
-        "producthuntVotes": 23
+        "twitterMentions": 0,
+        "producthuntVotes": 0
       },
       "rank": 11,
-      "score": 7
+      "score": 0
     },
     {
       "id": "openai-codex",
@@ -264,11 +264,11 @@
       "twitterQuery": "OpenAI Codex",
       "signals": {
         "githubStars": 0,
-        "twitterMentions": 20,
+        "twitterMentions": 0,
         "producthuntVotes": 0
       },
       "rank": 12,
-      "score": 3
+      "score": 0
     }
   ],
   "newTools": [
