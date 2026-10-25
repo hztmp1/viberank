@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DATA_FILE = path.join(__dirname, '../data/tools.json');
-const BASE_URL = 'https://hztmp1.github.io/viberank/';
+const NEWSLETTER_NEWSLETTER_BASE_URL = 'https://hztmp1.github.io/viberank/';
 
 function readData() {
   const raw = fs.readFileSync(DATA_FILE, 'utf-8');
@@ -115,7 +115,7 @@ function generateHtmlEmail(data) {
               </table>
 
               <div style="text-align: center; margin: 24px 0;">
-                <a href="${BASE_URL}" style="display: inline-block; background: #0ea5e9; color: white; text-decoration: none; font-weight: 600; padding: 12px 28px; border-radius: 8px; font-size: 14px;">View Full Rankings →</a>
+                <a href="${NEWSLETTER_BASE_URL}" style="display: inline-block; background: #0ea5e9; color: white; text-decoration: none; font-weight: 600; padding: 12px 28px; border-radius: 8px; font-size: 14px;">View Full Rankings →</a>
               </div>
 
               <!-- Just Dropped -->
@@ -129,7 +129,7 @@ function generateHtmlEmail(data) {
                   No pay-to-rank. Signals: <strong>GitHub stars · Twitter mentions · Product Hunt votes</strong>.
                   Category-weighted, log-scaled, updated daily via GitHub Actions.
                 </p>
-                <a href="${BASE_URL}#methodology" style="color: #0ea5e9; text-decoration: none; font-size: 13px; font-weight: 500;">See Methodology →</a>
+                <a href="${NEWSLETTER_BASE_URL}#methodology" style="color: #0ea5e9; text-decoration: none; font-size: 13px; font-weight: 500;">See Methodology →</a>
               </div>
 
               <!-- Submit -->
@@ -153,7 +153,7 @@ function generateHtmlEmail(data) {
                     <strong style="color: #cbd5e1;">VibeRank</strong> — Best AI tool for the job. Ranked.
                   </td>
                   <td align="right" style="color: #64748b; font-size: 11px;">
-                    <a href="${BASE_URL}" style="color: #64748b; text-decoration: none;">viberank.tools</a> ·
+                    <a href="${NEWSLETTER_BASE_URL}" style="color: #64748b; text-decoration: none;">viberank.tools</a> ·
                     <a href="{{ unsubscribe_url }}" style="color: #64748b; text-decoration: none;">Unsubscribe</a>
                   </td>
                 </tr>
