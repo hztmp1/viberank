@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DATA_FILE = path.join(__dirname, '../data/tools.json');
-const NEWSLETTER_NEWSLETTER_BASE_URL = 'https://hztmp1.github.io/viberank/';
+const NEWSLETTER_BASE_URL = 'https://hztmp1.github.io/viberank/';
 
 function readData() {
   const raw = fs.readFileSync(DATA_FILE, 'utf-8');
