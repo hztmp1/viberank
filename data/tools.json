@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "tools": [
     {
       "id": "claude-code-agents",
@@ -17,7 +17,7 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 155409,
+        "githubStars": 155524,
         "twitterMentions": 0,
         "producthuntVotes": 0
       },
@@ -39,7 +39,7 @@
       "githubRepo": "anthropics/claude-code",
       "twitterQuery": "Claude Code",
       "signals": {
-        "githubStars": 155409,
+        "githubStars": 155524,
         "twitterMentions": 0,
         "producthuntVotes": 0
       },
@@ -62,7 +62,7 @@
       "twitterQuery": "Bolt.new",
       "productHuntSlug": "bolt",
       "signals": {
-        "githubStars": 16592,
+        "githubStars": 16595,
         "twitterMentions": 0,
         "producthuntVotes": 2
       },
@@ -130,7 +130,7 @@
       "signals": {
         "githubStars": 0,
         "twitterMentions": 0,
-        "producthuntVotes": 592
+        "producthuntVotes": 591
       },
       "rank": 6,
       "score": 10
