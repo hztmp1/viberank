@@ -1,7 +1,74 @@
 {
   "schemaVersion": "1.0",
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-19",
   "tools": [
+    {
+      "id": "claude-code-agents",
+      "name": "Claude Code",
+      "category": "coding-agents",
+      "description": "Highest real-world adoption and merge quality",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "agent",
+        "terminal",
+        "github-integration"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 156286,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 1,
+      "score": 26
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "vibecoding",
+      "description": "Best terminal-based agent for large repos",
+      "url": "https://claude.ai/code",
+      "pricing": "subscription",
+      "tags": [
+        "terminal",
+        "agent",
+        "large-repos"
+      ],
+      "githubRepo": "anthropics/claude-code",
+      "twitterQuery": "Claude Code",
+      "signals": {
+        "githubStars": 156286,
+        "twitterMentions": 0,
+        "producthuntVotes": 0
+      },
+      "rank": 2,
+      "score": 21
+    },
+    {
+      "id": "bolt-new",
+      "name": "Bolt.new",
+      "category": "prompt-to-app",
+      "description": "Fastest path from prompt to full-stack prototype",
+      "url": "https://bolt.new",
+      "pricing": "freemium",
+      "tags": [
+        "prompt-to-app",
+        "full-stack",
+        "prototype"
+      ],
+      "githubRepo": "stackblitz/bolt.new",
+      "twitterQuery": "Bolt.new",
+      "productHuntSlug": "bolt",
+      "signals": {
+        "githubStars": 16609,
+        "twitterMentions": 0,
+        "producthuntVotes": 2
+      },
+      "rank": 3,
+      "score": 14
+    },
     {
       "id": "lovable-prompt",
       "name": "Lovable",
@@ -21,7 +88,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 1442
       },
-      "rank": 1,
+      "rank": 4,
       "score": 11
     },
     {
@@ -43,7 +110,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 1442
       },
-      "rank": 2,
+      "rank": 5,
       "score": 11
     },
     {
@@ -65,7 +132,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 591
       },
-      "rank": 3,
+      "rank": 6,
       "score": 10
     },
     {
@@ -88,7 +155,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 577
       },
-      "rank": 4,
+      "rank": 7,
       "score": 10
     },
     {
@@ -110,7 +177,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 102
       },
-      "rank": 5,
+      "rank": 8,
       "score": 7
     },
     {
@@ -134,7 +201,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 23
       },
-      "rank": 6,
+      "rank": 9,
       "score": 5
     },
     {
@@ -157,7 +224,7 @@
         "twitterMentions": 0,
         "producthuntVotes": 23
       },
-      "rank": 7,
+      "rank": 10,
       "score": 4
     },
     {
@@ -179,75 +246,8 @@
         "twitterMentions": 0,
         "producthuntVotes": 7
       },
-      "rank": 8,
-      "score": 3
-    },
-    {
-      "id": "bolt-new",
-      "name": "Bolt.new",
-      "category": "prompt-to-app",
-      "description": "Fastest path from prompt to full-stack prototype",
-      "url": "https://bolt.new",
-      "pricing": "freemium",
-      "tags": [
-        "prompt-to-app",
-        "full-stack",
-        "prototype"
-      ],
-      "githubRepo": "stackblitz/bolt.new",
-      "twitterQuery": "Bolt.new",
-      "productHuntSlug": "bolt",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 2
-      },
-      "rank": 9,
-      "score": 2
-    },
-    {
-      "id": "claude-code-agents",
-      "name": "Claude Code",
-      "category": "coding-agents",
-      "description": "Highest real-world adoption and merge quality",
-      "url": "https://claude.ai/code",
-      "pricing": "subscription",
-      "tags": [
-        "agent",
-        "terminal",
-        "github-integration"
-      ],
-      "githubRepo": "anthropics/claude-code",
-      "twitterQuery": "Claude Code",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
-      "rank": 10,
-      "score": 0
-    },
-    {
-      "id": "claude-code",
-      "name": "Claude Code",
-      "category": "vibecoding",
-      "description": "Best terminal-based agent for large repos",
-      "url": "https://claude.ai/code",
-      "pricing": "subscription",
-      "tags": [
-        "terminal",
-        "agent",
-        "large-repos"
-      ],
-      "githubRepo": "anthropics/claude-code",
-      "twitterQuery": "Claude Code",
-      "signals": {
-        "githubStars": 0,
-        "twitterMentions": 0,
-        "producthuntVotes": 0
-      },
       "rank": 11,
-      "score": 0
+      "score": 3
     },
     {
       "id": "openai-codex",
